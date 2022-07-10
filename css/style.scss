@@ -19,9 +19,15 @@ header {
             margin: auto;
             display: flex;
             justify-content: space-between;
+            align-items: center;
     
         }
-nav ul {
+       
+nav {
+    @include max-screen(768px) {
+        display: none;
+}
+ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -48,7 +54,7 @@ li {
     }
         
 }
-
+}
         
 .side-options {
     display: flex;
@@ -64,7 +70,10 @@ li {
 
 .main-banner {
     padding: 28px 0 75px;    
-    height: 100vh;
+    height: 100vh;    
+    // @include max-screen(580px) {
+        
+    //     }
 }
 .main-container {
     max-width: 1294px;
@@ -73,13 +82,16 @@ li {
     border-radius: 32px;
     display: flex;
     justify-content: space-between;
-    // @include max-screen(768px) {
-    //     flex-direction: column;
-    // }
+    @include max-screen(580px) {
+        flex-direction: column;
+    }
     article {
         max-width: 588px;
         align-self: center;
         margin-left: 56px;
+        @include max-screen(580px) {
+                text-align: center;
+            }
         h1 {
             font-family: 'Readex Pro';
             font-style: normal;
@@ -91,8 +103,12 @@ li {
 
             @include max-screen(1024px) {
                 font-size: 30px;
-                line-height: 40px;
+                line-height: 40px;                
             }
+                        @include max-screen(768px) {
+                            font-size: 20px;
+                                line-height: 30px;
+                        }
         }
         p {
             font-family: 'Inter';
@@ -102,6 +118,10 @@ li {
             line-height: 19px;
             color: #000000;
             margin-bottom: 30px;
+            @include max-screen(768px) {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
         }
         button {
             padding: 14px 53px;
@@ -114,6 +134,11 @@ li {
                 line-height: 22px;
                 text-transform: capitalize;            
                 color: #000000;
+                @include max-screen(768px) {
+                        font-size: 12px;
+                        line-height: 20px;
+                        padding: 7px 25px;
+                    }
         }
     }
 }
@@ -123,4 +148,44 @@ li {
         width: 100%;
         display: block;
     }
+}
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+    @include max-screen(768px) {
+            display: block;
+        }
+}
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2 {
+    opacity: 0;
+}
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #000000;
+}
+.mobile-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }

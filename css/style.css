@@ -9,6 +9,11 @@ header {
   padding: 30px 0;
   width: 100%;
 }
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 30px 10px;
+  }
+}
 header .container {
   max-width: 1294px;
   margin: auto;
@@ -54,8 +59,8 @@ header .side-options li:first-of-type {
 }
 
 .main-banner {
-  padding: 28px 0 75px;
-  height: 100vh;
+  padding-top: 28px;
+  margin-bottom: 28px;
 }
 
 .main-container {
@@ -193,7 +198,6 @@ header .side-options li:first-of-type {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 32px;
 }
 .mobile-menu li {
   margin-top: 30px;
@@ -210,4 +214,77 @@ header .side-options li:first-of-type {
   #logo img {
     width: 100%;
   }
+}
+
+.second-banner {
+  background-color: white;
+}
+
+.second-container {
+  padding: 72px 27px 27px;
+  max-width: 1350px;
+  margin: auto;
+}
+
+.items-header {
+  text-align: center;
+  margin-bottom: 59px;
+}
+.items-header h3 {
+  margin-bottom: 9px;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  font-family: "Readex Pro", sans-serif;
+  color: #000000;
+}
+.items-header p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  font-family: "Readex Pro", sans-serif;
+  color: #000000;
+}
+
+.items-container {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.each-item {
+  max-width: 303px;
+  text-align: left;
+  margin-right: 56px;
+}
+.each-item a {
+  margin-bottom: 9px;
+}
+.each-item a img {
+  padding: 28px;
+}
+.each-item a article {
+  max-width: 303px;
+}
+.each-item h4 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+}
+.each-item p {
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Inter", sans-serif;
+  color: #4B4B4B;
+}
+.each-item span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Inter", sans-serif;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */

@@ -78,10 +78,11 @@ header .side-options li:first-of-type {
 @media screen and (max-width: 580px) {
   .main-container article {
     text-align: center;
+    margin-left: 0;
   }
 }
 .main-container article h1 {
-  font-family: "Readex Pro";
+  font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
@@ -102,7 +103,7 @@ header .side-options li:first-of-type {
   }
 }
 .main-container article p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -117,10 +118,11 @@ header .side-options li:first-of-type {
   }
 }
 .main-container article button {
+  cursor: pointer;
   padding: 14px 53px;
   border: 1px solid #000000;
   border-radius: 200px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -186,7 +188,25 @@ header .side-options li:first-of-type {
 .mobile-menu {
   display: none;
   position: absolute;
+  top: 93px;
   left: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  border-radius: 32px;
+}
+.mobile-menu li {
+  margin-top: 30px;
+}
+.mobile-menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #logo {
+    max-width: 80px;
+  }
+  #logo img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

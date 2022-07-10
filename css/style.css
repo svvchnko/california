@@ -42,6 +42,7 @@ header nav ul li a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+  font-family: "Inter", sans-serif;
 }
 header .side-options {
   display: flex;

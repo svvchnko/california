@@ -1,4 +1,7 @@
-
+@import url(owl.carousel.css);
+@import url(owl.theme.default.css);
+@import url(normalize.css);
+@import url(media-queries.css);
 * {
   padding: 0;
   margin: 0;
@@ -49,6 +52,9 @@ header nav ul li a {
   color: black;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 }
 header .side-options {
   display: flex;
@@ -203,9 +209,17 @@ header .side-options li:first-of-type {
 .mobile-menu li {
   margin-top: 30px;
 }
+.mobile-menu li:nth-child(2) i {
+  margin-left: 4px;
+}
 .mobile-menu li a {
   text-decoration: none;
   color: white;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 @media screen and (max-width: 768px) {

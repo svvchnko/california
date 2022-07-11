@@ -63,6 +63,9 @@ li {
                 color: black;
                 text-transform: uppercase;
                 font-family: $secondary_font;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
                 
             }
     }
@@ -207,12 +210,23 @@ li {
     width: 100%;
     height: 100%;
     li {
-        margin-top: 30px;
+        margin-top: 30px;  
+        &:nth-child(2) {        
+                i {
+                    margin-left: 4px;
+                }
+            }
     a {
-        text-decoration: none;
-        color: white;
+        text-decoration: none;       
+        color: white;        
+        text-transform: uppercase;
+        font-family: $secondary_font;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        }
     }
-    }
+    
 }
 #logo {     
     @include max-screen(768px) {        

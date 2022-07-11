@@ -287,8 +287,8 @@ li {
     text-align: left;
     margin-right: 56px; 
     @include max-screen(1024px) {
-        align-self: center;
-
+        margin: 0 auto;
+        text-align: center;
     }
     a {
         margin-bottom: 9px;

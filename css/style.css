@@ -290,7 +290,8 @@ header .side-options li:first-of-type {
 }
 @media screen and (max-width: 1024px) {
   .items-container .each-item {
-    align-self: center;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 .items-container .each-item a {

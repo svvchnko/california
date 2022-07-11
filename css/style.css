@@ -1,3 +1,7 @@
+@import url(owl.carousel.css);
+@import url(owl.theme.default.css);
+@import url(normalize.css);
+@import url(media-queries.css);
 * {
   padding: 0;
   margin: 0;
@@ -238,6 +242,12 @@ header .side-options li:first-of-type {
   font-family: "Readex Pro", sans-serif;
   color: #000000;
 }
+@media screen and (max-width: 768px) {
+  .items-header h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
 .items-header p {
   font-weight: 400;
   font-size: 13px;
@@ -245,35 +255,50 @@ header .side-options li:first-of-type {
   font-family: "Readex Pro", sans-serif;
   color: #000000;
 }
+@media screen and (max-width: 768px) {
+  .items-header p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
 
 .items-container {
   text-align: left;
   display: flex;
   justify-content: space-between;
 }
-
-.each-item {
+@media screen and (max-width: 1024px) {
+  .items-container {
+    align-items: center;
+  }
+}
+.items-container .each-item {
   max-width: 303px;
   text-align: left;
   margin-right: 56px;
 }
-.each-item a {
+@media screen and (max-width: 1024px) {
+  .items-container .each-item {
+    align-self: center;
+  }
+}
+.items-container .each-item a {
   margin-bottom: 9px;
 }
-.each-item a img {
+.items-container .each-item a img {
   padding: 28px;
 }
-.each-item a article {
+.items-container .each-item a article {
   max-width: 303px;
 }
-.each-item h4 {
+.items-container h4 {
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
   font-family: "Readex Pro", sans-serif;
   color: #000000;
 }
-.each-item p {
+.items-container p {
   margin-bottom: 25px;
   font-weight: 400;
   font-size: 14px;
@@ -281,10 +306,109 @@ header .side-options li:first-of-type {
   font-family: "Inter", sans-serif;
   color: #4B4B4B;
 }
-.each-item span {
+.items-container span {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   font-family: "Inter", sans-serif;
   color: #000000;
+}
+
+footer {
+  background-color: #F8F9FA;
+  width: 100%;
+  padding: 29px 0 78px;
+}
+footer .container {
+  max-width: 1294px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+  }
+}
+footer .footer-left {
+  max-width: 304px;
+  text-align: left;
+  margin-right: 118px;
+}
+@media screen and (max-width: 1024px) {
+  footer .footer-left {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .footer-left {
+    text-align: center;
+    align-self: center;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+}
+footer .footer-left p {
+  margin-top: 18px;
+}
+footer .footer-right {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  footer .footer-right {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+@media screen and (max-width: 580px) {
+  footer .footer-right {
+    flex-direction: column;
+  }
+}
+footer .footer-right li {
+  list-style: none;
+  max-width: 197px;
+  margin-right: 28px;
+  margin-bottom: 14px;
+}
+@media screen and (max-width: 768px) {
+  footer .footer-right li {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+footer .footer-right li:last-of-type {
+  margin: inherit;
+  margin-bottom: 0;
+}
+footer .footer-right li a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #000000;
+}
+@media screen and (max-width: 1024px) {
+  footer .footer-right li a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+footer .footer-right li h4 {
+  margin-bottom: 19px;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000;
+}
+@media screen and (max-width: 1024px) {
+  footer .footer-right li h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

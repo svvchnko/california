@@ -46,11 +46,11 @@ body {
 #toggle {
   position: relative;
   width: 40px;
+  height: 36px;
   left: 20px;
+  top: 20px;
   transition: all 300ms ease-in-out;
   z-index: 10;
-  visibility: hidden;
-  
 }
 #toggle input {
   position: absolute;

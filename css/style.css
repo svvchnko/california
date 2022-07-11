@@ -362,6 +362,11 @@ footer .footer-left {
 }
 footer .footer-left p {
   margin-top: 18px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "Readex Pro", sans-serif;
+  color: black;
 }
 footer .footer-right {
   display: flex;
